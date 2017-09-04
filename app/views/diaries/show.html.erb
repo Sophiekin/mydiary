@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Feeling:</strong>
+  <%= @diary.feeling %>
+</p>
+
+<p>
+  <strong>Weather:</strong>
+  <%= @diary.weather %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @diary.note %>
+</p>
+
+<%= link_to 'Edit', edit_diary_path(@diary) %> |
+<%= link_to 'Back', diaries_path %>
